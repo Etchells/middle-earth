@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle Earth</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+  </head>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+<h2 id="title">Middle Earth</h2>
+<h3 id="subtitle">Add new character to database</h3>
+
+<form class="add-character-form" action="">
+    <div class="form-group">
+        <input type="text" id="first-name" placeholder=" " class="form-input" />
+        <label for="first-name">First Name</label>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="text" id="last-name" placeholder=" " class="form-input" />
+        <label for="last-name">Last Name</label>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="text" id="location" placeholder=" " class="form-input" />
+        <label for="location">Location</label>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="text" id="age" placeholder=" " class="form-input" />
+        <label for="age">Age</label>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="text" id="race" placeholder=" " class="form-input" />
+        <label for="race">Race</label>
+    </div>
+    <br>
+    <button class="btn" id="add-update-button" type="submit">Add/Update Character</button>
+</form>
+<br>
+
+<h3 id="subtitle2">Characters within Middle Earth</h3>
+<br>
+<div class="character-list"></div>
+
+
+
+<script src="/js/index.js"></script>
+</body>
+
+</html>

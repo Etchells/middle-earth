@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    /* padding-left: 10px; */
+}
+
+/* Start of floating text */
+.form-group{
+    width: 90%;
+    max-width: 20em;
+    height: 2em;
+    position: relative;
+}
+
+.form-input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border: 1px solid black;
+    border-radius: 0.25em;
+    outline: none;
+    color: black;
+    padding-left: 1em;
+    box-shadow: 5px 5px rgba(136, 136, 136, 0.37);
+}
+
+label{
+    position: absolute;
+    background: white;
+    color: rgb(141, 125, 125);
+    /* width: 100%; */
+    left: 1em;
+    top: 0.55em;
+    cursor: text;
+    transition: top 250ms ease-in, font-size 250ms ease-in;
+}
+
+.form-input:hover{
+    /* border: 1px solid rgb(170, 150,39); */
+}
+
+label:hover{
+    /* color: rgb(170, 150, 39); */
+}
+
+.form-input:focus{
+    /* border: 1px solid rgb(212, 182, 8); */
+}
+
+input[type="text"]:focus ~ label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ label{
+    top: -0.5em;
+    font-size: 0.75rem;
+    padding: 0 0.125em;
+}
+/* End of floating text */
+
+#title,#sub-title{
+    /* text-shadow: 2px 2px 4px #4d2d2d; */
+}
+
+#add-update-button{
+    /* height: 2em;
+    width: 20em; */
+    /* max-width: 20em; */
+}
+
+.add-character-form{
+    /* border: solid 1px red; */
+    padding-left: 50px;
+}
+#title,#subtitle, #subtitle2{
+    padding-left: 50px;
+}
+
+.btn{
+    height: 40px;
+    width: 338px;
+    box-shadow: 5px 5px rgba(136, 136, 136, 0.37);
+}
+
+.character-list{
+    /* border: solid 1px red; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.card{
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 0.50em;
+    width: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px rgba(136, 136, 136, 0.37);
+    background: rgba(202, 204, 202, 0.281);
+}
+
+.card-title1, .card-title2{
+    /* border: solid 1px red; */
+    background: rgba(231, 204, 112, 0.514);
+    height: 25px;
+    border-radius: 0.50em;
+    padding: 5px 0;
+    border: 1px solid goldenrod;
+    text-align: center;
+    
+}
