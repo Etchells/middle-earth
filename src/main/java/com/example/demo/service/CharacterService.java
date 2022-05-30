@@ -48,4 +48,35 @@ public class CharacterService {
         this.repo.deleteById(id);
         return this.repo.existsById(id);
     }
+
+    // Create a list of characters
+    public List<Character> createList(List<Character> characters){
+        return this.repo.saveAll(characters);
+    }
+
+    // Find by firstName
+    public List<Character> findByFirstName(String firstName){
+        return this.repo.findByFirstName(firstName);
+    }
+
+    // Find by lastName
+    public List<Character> findByLastName(String lastName){
+        return this.repo.findByLastName(lastName);
+    }
+
+    // Find by location
+    public List<Character> findByLocation(String location){
+        return this.repo.findByLocation(location);
+    }
+
+    // Find by race
+    public List<Character> findByRace(String race){
+        return this.repo.findByRace(race);
+    }
+
+    // Find by location and race
+    public List<Character> findByLocationAndRace(String location, String race){
+        return this.repo.findByLocationAndRace(location, race);
+    }
+
 }
